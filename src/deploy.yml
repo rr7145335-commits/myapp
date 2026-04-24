@@ -1,7 +1,8 @@
-name: Deploy Maven Artifact
-hosts: Web
-become: yes
-tasks:
+---
+-name: Deploy Maven Artifact
+ hosts: Web
+ become: yes
+ tasks:
   - name: Copy JAR file
     copy:
       src: /var/lib/jenkins/workspace/mavenproj/maven-example/target/maven-example-1.0-SNAPSHOT.jar
