@@ -1,6 +1,5 @@
 - name: Deploy Maven Artifact
   hosts: web
-  become: yes
   tasks:
     - name: Copy JAR file
       copy:
